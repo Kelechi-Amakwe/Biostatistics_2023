@@ -4,7 +4,7 @@
 data <- read.csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv")
 
 #run correlation test without plotting fips ans case
-res <- cor.test(data$fips, data$case, method = "pearson")
+res <- cor.test(data$fips, data$deaths, method = "pearson")
 
 #Print the correlation test
 res
